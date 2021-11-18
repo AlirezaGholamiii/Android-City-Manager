@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country information"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/tvCName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country name"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edCName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvCName"
+        app:layout_constraintLeft_toRightOf="@id/tvCName"
+        android:layout_marginLeft="30dp"
+        android:background="#8AB3DC"
+        />
+    <TextView
+        android:id="@+id/tvCCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital"
+        app:layout_constraintTop_toBottomOf="@id/tvCName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edCCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvCCapital"
+        app:layout_constraintStart_toStartOf="@id/edCName"
+        android:background="#8AB3DC"
+        />
+    <ListView
+        android:id="@+id/lvCountries"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCCapital"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintTop_toTopOf="@id/btnAdd"
+        app:layout_constraintLeft_toRightOf="@id/btnAdd"
+        app:layout_constraintRight_toLeftOf="@id/btnSort"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        app:layout_constraintTop_toTopOf="@id/btnAdd"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAllCaps="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
