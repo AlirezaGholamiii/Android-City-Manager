@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.prjlistview.model.Country;
+import com.example.prjlistview.model.FileManagment;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -61,18 +62,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lvCountries.setOnClickListener(this);
         lvCountries.setOnItemLongClickListener(this);
 
-        listOfCountries = new ArrayList<Country>();
+        /*listOfCountries = new ArrayList<Country>();
         Country c0 = new Country("Canada","Ottawa");
         Country c1 = new Country("India", "Dehli");
         Country c2 = new Country("France", "Paris");
 
         listOfCountries.add(c0);
         listOfCountries.add(c1);
-        listOfCountries.add(c2);
+        listOfCountries.add(c2);*/
 
-
+        listOfCountries = FileManagment.reafFile(this, "countries.txt");
         //Initiolize the adabter
-        lvAdabter = new ArrayAdapter<Country>(this, android.R.layout.simple_list_item_1, listOfCountries);
+        lvAdabter = new ArrayAdapter<Country>(this, R.layout.one_item, listOfCountries);
 
         lvCountries.setAdapter(lvAdabter);
 

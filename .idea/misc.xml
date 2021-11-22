@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidProjectFall2021/PrjListView/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AndroidProjectFall2021/PrjListView/app/src/main/res/drawable/item_pressed.xml" value="0.1" />
+        <entry key="..\:/AndroidProjectFall2021/PrjListView/app/src/main/res/drawable/item_relessed.xml" value="0.1" />
+        <entry key="..\:/AndroidProjectFall2021/PrjListView/app/src/main/res/drawable/listview_selector.xml" value="0.1" />
+        <entry key="..\:/AndroidProjectFall2021/PrjListView/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidProjectFall2021/PrjListView/app/src/main/res/layout/one_item.xml" value="0.1" />
       </map>
     </option>
   </component>
